@@ -23,10 +23,7 @@ fn every_recipient_can_open_a_multi_recipient_file() {
     let ciphertext = encrypt(b"to all".to_vec(), recipients).unwrap();
 
     for identity in identities {
-        assert_eq!(
-            decrypt(ciphertext.clone(), identity).unwrap(),
-            b"to all"
-        );
+        assert_eq!(decrypt(ciphertext.clone(), identity).unwrap(), b"to all");
     }
 }
 
