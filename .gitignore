@@ -1,0 +1,8 @@
+.gradle/
+build/
+target/
+local.properties
+.idea/
+.DS_Store
+*.hprof
+.kotlin/

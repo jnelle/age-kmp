@@ -1,0 +1,19 @@
+[package]
+name = "age-kmp"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[lib]
+name = "age_kmp"
+# cdylib for Android (loaded as a .so), staticlib for Apple targets, lib so the
+# integration tests in tests/ can link against the crate.
+crate-type = ["cdylib", "staticlib", "lib"]
+path = "src/commonMain/rust/lib.rs"
+
+[dependencies]
+age = "0.12.1"
+thiserror = "2.0.20"
+uniffi = "=0.29.4"
+
+[build-dependencies]

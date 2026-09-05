@@ -1,0 +1,16 @@
+[versions]
+kotlin = "2.4.10"
+agp = "9.2.1"
+gobley = "0.3.7"
+androidMinSdk = "26"
+androidCompileSdk = "36"
+androidNdk = "30.0.16138531"
+mavenPublish = "0.37.0"
+
+[plugins]
+kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+kotlinAtomicfu = { id = "org.jetbrains.kotlin.plugin.atomicfu", version.ref = "kotlin" }
+androidLibrary = { id = "com.android.library", version.ref = "agp" }
+gobleyCargo = { id = "dev.gobley.cargo", version.ref = "gobley" }
+gobleyUniffi = { id = "dev.gobley.uniffi", version.ref = "gobley" }
+mavenPublish = { id = "com.vanniktech.maven.publish", version.ref = "mavenPublish" }
